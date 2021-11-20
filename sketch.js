@@ -1,14 +1,28 @@
-var song
+var video
 
 function preload() {
-  song = loadSound('https://github.com/Digiwind/p5jsrr/blob/main/rickroll.mp3?raw=true')
+    video = createVideo('rickrollvideo.mp4')
 }
 
 function setup () {
     createCanvas(windowWidth, windowHeight);
+    video.size(windowWidth, windowHeight);
 }
 
 function draw () {
     background(0)
-    song.play()
+    video.play()
+    video.volume(1);
+    let img = video.get();
+        image(img, 0, 0); 
 } 
+
+function keyPressed() {
+    if (video.isPlaying()) {
+      video.pause()
+      noLoop()
+    } else {
+      video.play()
+      noloop()
+    }
+  }
