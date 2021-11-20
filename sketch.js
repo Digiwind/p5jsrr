@@ -9,8 +9,6 @@ function setup () {
     video.play()
     video.size(windowWidth, windowHeight);
     video.volume(1);
-    video.loop();
-    video.hide(); 
 }
 
 function draw () {
