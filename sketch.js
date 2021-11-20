@@ -1,7 +1,7 @@
 var song
 
 function preload() {
-  song = loadSound('rickroll.mp3')
+  song = loadSound('https://github.com/Digiwind/p5jsrr/blob/main/rickroll.mp3')
 }
 
 function setup () {
