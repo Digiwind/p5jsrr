@@ -1,7 +1,7 @@
 var song
 
 function preload() {
-  video = createSong('rickroll.mp3')
+  song = loadSound('rickroll.mp3')
 }
 
 function setup () {
