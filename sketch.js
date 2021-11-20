@@ -8,7 +8,7 @@ function setup () {
     createCanvas(windowWidth, windowHeight);
     video.play()
     video.size(windowWidth, windowHeight);
-    video.volume(100);
+    video.volume(1);
     video.loop();
     video.hide(); 
 }
