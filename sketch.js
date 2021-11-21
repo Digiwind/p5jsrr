@@ -14,15 +14,5 @@ function draw () {
     video.play()
     video.volume(1);
     let img = video.get();
-        image(img, 0, 0); 
+      image(img, 0, 0); 
 } 
-
-function keyPressed() {
-    if (video.isPlaying()) {
-      video.pause()
-      noLoop()
-    } else {
-      video.play()
-      noloop()
-    }
-  }
